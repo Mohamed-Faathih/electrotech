@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shafa-electricals</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    .container {
+      top:500px;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+    .contact-info, .business-hours, .social-media {
+      margin-bottom: 20px;
+    }
+    .contact-info p, .business-hours p, .social-media a {
+      margin: 5px 0;
+    }
+    .map {
+      margin-right: 20px;
+    }
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      max-width: 600px;
+      max-height: 450px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form label {
+      margin-top: 10px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      margin-top: 20px;
+      padding: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <hr>
+  <div id="body1">
+    <img src="LO GO.jpg" alt="logo" title="electrotech engineers-where the product quality matters" id="logo">
+  </div>
+  <p class="spaced-paragraph"></p>
+  <h1 class="quality-matters">---> "WHERE THE QUALITY MATTERS"</h1>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="shafa.html">HOME</a></li>
+      <li><a href="products.html">PRODUCTS</a></li>
+      <li><a href="profile.html">COMPANY PROFILE</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <hr>
+</header>
+<div class="container">
+  <h2>Contact Us</h2>
+
+  <div class="content">
+    <div class="map">
+      <h3>Our Location</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15720.70948999298!2d78.1143414!3d9.9191812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5f22ddbaebd%3A0x1deffbb9839390be!2sElectrotech%20engineers!5e0!3m2!1sen!2sin!4v1718379598062!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+
+    <div>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Address:</strong> Adamsa Lane, Madurai Main, Madurai, Tamil Nadu 625001</p>
+        <p><strong>Phone:</strong>+91 9994227558</p>
+        <p><strong>Email:</strong> sahul8888@gmail.com </p>
+      </div>
+
+      <div class="business-hours">
+        <h3>Business Hours</h3>
+        <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+        <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+        <p><strong>Sunday:</strong> Closed</p>
+      </div>
+
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/electrotech">Facebook</a> |
+        <a href="https://www.twitter.com/electrotech">Twitter</a> |
+        <a href="https://www.linkedin.com/company/electrotech">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+<p class="spaced-paragraph"></p>
+  <h2>Contact Form</h2>
+  <form action="submit_contact_form.php" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<footer>
+  <hr>
+  <p>Copyright © 2024 Electrotech Engineer. All rights reserved.</p>
+  <hr>
+</footer>
+</body>
+</html>
